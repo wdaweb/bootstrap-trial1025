@@ -1,0 +1,35 @@
+.fs-14px {
+  font-size: 14px; 
+}
+
+.nav-bar {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out;
+}
+
+/* 加入圓點 */
+.point:hover ::before{
+  content: "•";
+  margin-right: 5px;
+  color: white;
+}
+/* style=background:#09AFF4;" */
+body{
+  background: rgb(66, 94, 135);
+}
+
+.bg-blue{
+  background: #09AFF4;
+}
+
+.media-icon ul li{
+  display: inline;
+  list-style-type:none;
+  padding: 5px;
+}
+
+.btn-media{
+  border-radius:90%;
+}
