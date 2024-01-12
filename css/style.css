@@ -24,12 +24,32 @@ body{
   background: #09AFF4;
 }
 
+/* header */
+
 .media-icon ul li{
   display: inline;
   list-style-type:none;
   padding: 5px;
+  color: white;
+}
+
+.media-icon ul {
+  padding: 0%;
 }
 
 .btn-media{
   border-radius:90%;
+}
+
+.h-text h1{
+  color: white;
+  font-weight: 900;
+  letter-spacing:1px
+}
+.h-text h6{
+  color: #09AFF4;
+  font-weight: 600;
+}
+.h-text p{
+  color: white;
 }
