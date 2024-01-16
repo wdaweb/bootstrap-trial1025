@@ -11,124 +11,143 @@
     * {
       font-family:'Noto Sans TC',sans-serif;
     }
+
+    #section01 {
+      height: 100vh;
+    }
+
+    #particles-js {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      /* 因為動畫通常會用在絕對、固定定位，會蓋住下方連結或按鈕，對動畫使用 pointer-events:none 可以穿透點選底下的連結、按鈕 */
+      pointer-events: none;
+    }
   </style>
 </head>
-<body>
-  <!-- navbar -->
-  <div class="container">
-    <nav class="navbar container-fluid navbar-expand-lg navbar-dark fs-14px" ">
-      <div class="container-fluid col-12">
-        <a class="navbar-brand" href="#">
-          <img src="./img/logo-light.png">
-        </a>
-        <div class="collapse navbar-collapse" id="a">
-          <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-bar active" href="#">Home +</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-bar" href="#">About Us</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-bar dropdown-toggle" href="#" id="services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Services +
-              </a>
-              <ul class="dropdown-menu bg-blue" aria-labelledby="services">
-                <li><a class="dropdown-item " href="#">Services</a></li>
-                <li><a class="dropdown-item" href="#">Services Single action</a></li>
-                <!-- <li><hr class="dropdown-divider"></li> -->
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-bar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Portfolio +
-              </a>
-              <ul class="dropdown-menu bg-blue" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Portfolio Grid</a></li>
-                <li><a class="dropdown-item" href="#">Portfolio Grid</a></li>
-                <li><a class="dropdown-item" href="#">Portfolio Slider</a></li>
-                <li><a class="dropdown-item" href="#">Portfolio Single</a></li>
-                <!-- <li><hr class="dropdown-divider"></li> -->
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-bar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Blog +
-              </a>
-              <ul class="dropdown-menu bg-blue" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Blog Home 1 Column</a></li>
-                <li><a class="dropdown-item" href="#">Blog Home 2 Columns</a></li>
-                <li><a class="dropdown-item" href="#">Blog Home 3 Columns</a></li>
-                <li><a class="dropdown-item" href="#">Single Post</a></li>
-                <!-- <li><hr class="dropdown-divider"></li> -->
-              </ul>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-bar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                Pages +
-              </a>
-              <ul class="dropdown-menu bg-blue" aria-labelledby="navbarDropdown">
-                <li><a class="dropdown-item" href="#">Pricing Plans</a></li>
-                <li><a class="dropdown-item" href="#">Our Team</a></li>
-                <li><a class="dropdown-item" href="#">Team Member</a></li>
-                <li><a class="dropdown-item" href="#">FAQ</a></li>
-                <li><a class="dropdown-item" href="#">404 Page</a></li>
-                <!-- <li><hr class="dropdown-divider"></li> -->
-              </ul>
-            </li>
-            <li class="nav-item">
-              <a class="nav-bar" href="#">Contact Us</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass text-white"></i></button>
-            <button class="btn btn-outline-light" type="submit"><i class="fa-regular fa-sun"></i></button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </div>
-
+<body> 
   <!-- header -->
-  <div id="section02">
-    <div class="container">
-      <div class="row">
-        <div class="col-6 bg-secondary">
-          <div class="media-icon">
-            <ul>
-              <li><i class="fa-brands fa-facebook-f"></i></li>
-              <li><i class="fa-brands fa-youtube"></i></li>
-              <li><i class="fa-brands fa-instagram"></i></li>
-              <li><i class="fa-brands fa-twitter"></i></li>
-            </ul>
+  <!-- section01 -->
+  <div id="section01" style="background-image: url(./img/pattern-bg-1.jpg);">
+    <!-- <div id="particles-js" style="background: rgba(35, 35, 138,0.8);"></div> -->
+      <div class="container">
+        <nav class="navbar container-fluid navbar-expand-lg navbar-dark fs-14px" ">
+          <div class="container-fluid col-12">
+            <a class="navbar-brand" href="#">
+              <img src="./img/logo-light.png">
+            </a>
+            <div class="collapse navbar-collapse" id="a">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-bar active" href="#">Home +</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-bar" href="#">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-bar dropdown-toggle" href="#" id="services" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Services +
+                  </a>
+                  <ul class="dropdown-menu bg-blue" aria-labelledby="services">
+                    <li><a class="dropdown-item " href="#">Services</a></li>
+                    <li><a class="dropdown-item" href="#">Services Single action</a></li>
+                    <!-- <li><hr class="dropdown-divider"></li> -->
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-bar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Portfolio +
+                  </a>
+                  <ul class="dropdown-menu bg-blue" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Portfolio Grid</a></li>
+                    <li><a class="dropdown-item" href="#">Portfolio Grid</a></li>
+                    <li><a class="dropdown-item" href="#">Portfolio Slider</a></li>
+                    <li><a class="dropdown-item" href="#">Portfolio Single</a></li>
+                    <!-- <li><hr class="dropdown-divider"></li> -->
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-bar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Blog +
+                  </a>
+                  <ul class="dropdown-menu bg-blue" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Blog Home 1 Column</a></li>
+                    <li><a class="dropdown-item" href="#">Blog Home 2 Columns</a></li>
+                    <li><a class="dropdown-item" href="#">Blog Home 3 Columns</a></li>
+                    <li><a class="dropdown-item" href="#">Single Post</a></li>
+                    <!-- <li><hr class="dropdown-divider"></li> -->
+                  </ul>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-bar dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Pages +
+                  </a>
+                  <ul class="dropdown-menu bg-blue" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="#">Pricing Plans</a></li>
+                    <li><a class="dropdown-item" href="#">Our Team</a></li>
+                    <li><a class="dropdown-item" href="#">Team Member</a></li>
+                    <li><a class="dropdown-item" href="#">FAQ</a></li>
+                    <li><a class="dropdown-item" href="#">404 Page</a></li>
+                    <!-- <li><hr class="dropdown-divider"></li> -->
+                  </ul>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-bar" href="#">Contact Us</a>
+                </li>
+              </ul>
+              <form class="d-flex">
+                <button class="btn" type="submit"><i class="fa-solid fa-magnifying-glass text-white"></i></button>
+                <button class="btn btn-outline-light" type="submit"><i class="fa-regular fa-sun"></i></button>
+              </form>
+            </div>
           </div>
-          <div class="h-text">
-            <h6>• IT SOLUTIONS •</h6>
-            <h1>Providing The Best</h1>
-            <h1>Services & IT <span style="color: #09AFF4;">Solutions</span></h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto dolorum inventore totam adipisci</p>
+        </nav>
+      </div>
+      <div class="container" >
+        <div class="row d-flex align-items-end">
+          <div class="col-6 lh-4">
+            <div class="media-icon">
+              <ul>
+                <li><i class="fa-brands fa-facebook-f"></i></li>
+                <li><i class="fa-brands fa-youtube"></i></li>
+                <li><i class="fa-brands fa-instagram"></i></li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+              </ul>
+            </div>
+            <div class="h-text">
+              <h6>• IT SOLUTIONS •</h6>
+              <h1>Providing The Best</h1>
+              <h1>Services & IT <span style="color: #09AFF4;">Solutions</span></h1>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto dolorum inventore totam adipisci</p>
+            </div>
+            <form class="d-flex">
+              <button class="btn btn-outline-light btn-media-lr" type="submit">START NOW</button>
+              <button class="btn btn-outline-light btn-media bg-blue ms-4" type="submit"><i class="fa-solid fa-play"></i></button>
+            </form>
           </div>
-          <form class="d-flex">
-            <button class="btn btn-outline-light" type="submit">START NOW</button>
-            <button class="btn btn-outline-light btn-media bg-blue" type="submit"><i class="fa-solid fa-play"></i></button>
-          </form>
-        </div>
-        <div class="col-6 bg-info">
-        
+          <div class="col-6">
+            <img src="./img/illustration-1.png" class="img-fluid">
+          </div>
         </div>
       </div>
-    </div>
   </div>
 
-  <!-- section01 -->
   <!-- section02 -->
   <!-- section03 -->
   <!-- section04 -->
   <!-- section05 -->
+  <!-- section06 -->
+  <!-- section07 -->
+  <!-- section08 -->
+  <!-- section09 -->
 
   <!-- footer -->
 
   <script src="./js/bootstrap.bundle.js"></script>
   <script src="https://kit.fontawesome.com/a8dd4fdfaa.js" crossorigin="anonymous"></script>
+  <script src="./js/particles.min.js"></script>
+  <script src="./js/app.js"></script>
 </body>
 </html>

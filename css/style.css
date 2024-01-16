@@ -40,11 +40,15 @@ body{
 .btn-media{
   border-radius:90%;
 }
+.btn-media-lr{
+  border-radius:0 10px 0 10px;
+}
 
 .h-text h1{
   color: white;
-  font-weight: 900;
-  letter-spacing:1px
+  font-weight:900;
+  letter-spacing:1px;
+  font-size:50px;
 }
 .h-text h6{
   color: #09AFF4;
@@ -52,4 +56,8 @@ body{
 }
 .h-text p{
   color: white;
+}
+
+.lh-4 {
+  line-height:4  !important;
 }
