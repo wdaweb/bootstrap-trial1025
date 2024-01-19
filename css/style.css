@@ -24,6 +24,10 @@ body{
   background: #09AFF4;
 }
 
+.color-blue{
+  color: #09AFF4;
+}
+
 /* header */
 
 .media-icon ul li{
@@ -53,6 +57,7 @@ body{
 .h-text h6{
   color: #09AFF4;
   font-weight: 600;
+  font-size:large;
 }
 .h-text p{
   color: white;
@@ -60,4 +65,40 @@ body{
 
 .lh-4 {
   line-height:4  !important;
+}
+
+/* 圖片傾斜 */
+#skewable-container {
+  perspective: 1000px; /* 设置透视距离 */
+  transform-style: preserve-3d; /* 保持3D样式 */
+}
+
+#skewable-image {
+  transition: transform 0.3s;
+  transform-style: preserve-3d;
+}
+
+/* 02 */
+
+.color-w{
+  color: white;
+}
+
+.i-size{
+  font-size: 4rem;
+  margin-left: 20px;
+  margin-top: 20px;
+}
+
+.c-title{
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.c-title a{
+  font-size:0.5rem;
+}
+
+.c-title h1{
+  font-size:1.2rem;;
 }

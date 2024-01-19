@@ -25,13 +25,18 @@
       /* 因為動畫通常會用在絕對、固定定位，會蓋住下方連結或按鈕，對動畫使用 pointer-events:none 可以穿透點選底下的連結、按鈕 */
       pointer-events: none;
     }
+
+    .row{
+      padding-top: 1rem;
+      padding-bottom: 1rem;
+    }
   </style>
 </head>
 <body> 
-  <!-- header -->
-  <!-- section01 -->
+  <!-- header ----------------------------------------------------------------------------->
+  <!-- section01 ----------------------------------------------------------------------------->
   <div id="section01" style="background-image: url(./img/pattern-bg-1.jpg);">
-    <!-- <div id="particles-js" style="background: rgba(35, 35, 138,0.8);"></div> -->
+    <div id="particles-js" ></div>
       <div class="container">
         <nav class="navbar container-fluid navbar-expand-lg navbar-dark fs-14px" ">
           <div class="container-fluid col-12">
@@ -107,7 +112,7 @@
       </div>
       <div class="container" >
         <div class="row d-flex align-items-end">
-          <div class="col-6 lh-4">
+          <div class="col-lg-6 lh-4 col-sm-12">
             <div class="media-icon">
               <ul>
                 <li><i class="fa-brands fa-facebook-f"></i></li>
@@ -118,8 +123,7 @@
             </div>
             <div class="h-text">
               <h6>• IT SOLUTIONS •</h6>
-              <h1>Providing The Best</h1>
-              <h1>Services & IT <span style="color: #09AFF4;">Solutions</span></h1>
+              <h1>Providing The Best Services & IT <span style="color: #09AFF4;">Solutions</span></h1>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto dolorum inventore totam adipisci</p>
             </div>
             <form class="d-flex">
@@ -127,15 +131,176 @@
               <button class="btn btn-outline-light btn-media bg-blue ms-4" type="submit"><i class="fa-solid fa-play"></i></button>
             </form>
           </div>
-          <div class="col-6">
-            <img src="./img/illustration-1.png" class="img-fluid">
+          <div class="col-lg-6 col-sm-12">
+            <div id="skewable-container">
+              <img src="./img/illustration-1.png" class="img-fluid" id="skewable-image">
+            </div>
           </div>
         </div>
       </div>
   </div>
+  <!-- section02 ----------------------------------------------------------------------------->
+  <div id="section02" class="bg-black p-5">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+          <div class="h-text">
+            <h6>• SERVICES •</h6>
+            <h1>Services We Offer</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto dolorum inventore totam adipisci</p>
+          </div>
+        </div>
+        <div class="col-lg-4 d-flex justify-content-end align-items-center">
+          <button class="btn btn-outline-light btn-media-lr" type="submit">See All Services<i class="fa-solid fa-arrow-right ms-2"></i></button>
+        </div>  
+      </div>
 
-  <!-- section02 -->
+      <!-- card -->
+      <div class="row row-cols-1 row-cols-md-3 g-4 color-w">
+        <div class="col">
+          <div class="card p-1">
+            <div class=""><i class="fa-solid fa-laptop-code i-size color-blue"></i></div>
+            <div class="card-body">
+              <h5 class="c-title">Web Development</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.</p>
+              <a href="#" class="c-title">Read More<i class="fa-solid fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-1">
+            <div class=""><i class="fa-solid fa-layer-group i-size color-blue"></i></div>
+            <div class="card-body">
+              <h5 class="c-title">Web Development</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.</p>
+              <a href="#" class="c-title">Read More<i class="fa-solid fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-1">
+            <div class=""><i class="fa-solid fa-database i-size color-blue"></i></div>
+            <div class="card-body">
+              <h5 class="c-title">Web Development</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.</p>
+              <a href="#" class="c-title">Read More<i class="fa-solid fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-1">
+            <div class=""><i class="fa-solid fa-rocket i-size color-blue"></i></div>
+            <div class="card-body">
+              <h5 class="c-title">Web Development</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.</p>
+              <a href="#" class="c-title">Read More<i class="fa-solid fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-1">
+            <div class=""><i class="fa-solid fa-user i-size color-blue"></i></div>
+            <div class="card-body">
+              <h5 class="c-title">Web Development</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.</p>
+              <a href="#" class="c-title">Read More<i class="fa-solid fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card p-1">
+            <div class=""><i class="fa-solid fa-cloud i-size color-blue"></i></div>
+            <div class="card-body">
+              <h5 class="c-title">Web Development</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.</p>
+              <a href="#" class="c-title">Read More<i class="fa-solid fa-arrow-right ms-2"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- section03 -->
+  <div id="section03" class="bg-black p-5">
+    <div class="container">
+      <div class="row d-flex align-items-center">
+        <div class="col-lg-6 col-sm-12">
+          <div class="h-text">
+            <h6>• ABOUT US •</h6>
+            <h1>Trusted By Worldwide Clients Since <span style="color: #09AFF4;">1980.</span></h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. A officia molestiae dolorum tempora ut accusamus cupiditate! Nesciunt tempora reiciendis libero voluptate!</p>
+          </div>
+          <div class="row row-cols-1 row-cols-md-2 g-4 color-w">
+            <div class="card" style="max-width: 540px;">
+              <div class="row">
+                <div class="col-md-4">
+                  <i class="fa-solid fa-laptop-code color-blue"></i>
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="..." class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="..." class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="card mb-3" style="max-width: 540px;">
+              <div class="row g-0">
+                <div class="col-md-4">
+                  <img src="..." class="img-fluid rounded-start" alt="...">
+                </div>
+                <div class="col-md-8">
+                  <div class="card-body">
+                    <h5 class="card-title">Card title</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <form class="d-flex">
+            <button class="btn btn-outline-light btn-media-lr" type="submit">START NOW</button>
+            <button class="btn btn-outline-light btn-media bg-blue ms-4" type="submit"><i class="fa-solid fa-play"></i></button>
+          </form>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+          <div id="skewable-container">
+            <img src="./img/illustration-1.png" class="img-fluid" id="skewable-image">
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
   <!-- section04 -->
   <!-- section05 -->
   <!-- section06 -->
@@ -149,5 +314,19 @@
   <script src="https://kit.fontawesome.com/a8dd4fdfaa.js" crossorigin="anonymous"></script>
   <script src="./js/particles.min.js"></script>
   <script src="./js/app.js"></script>
+
+  <script>
+  document.getElementById('skewable-container').addEventListener('mousemove', function(event) {
+      var rect = this.getBoundingClientRect();
+      var x = event.clientX - rect.left - rect.width / 2;
+      var y = event.clientY - rect.top - rect.height / 2;
+
+      var rotateX = y / rect.height * 30; // y轴旋转角度
+      var rotateY = x / rect.width * -30; // x轴旋转角度
+
+      document.getElementById('skewable-image').style.transform = 'rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)';
+  });
+
+  </script>
 </body>
 </html>
