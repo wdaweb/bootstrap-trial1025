@@ -63,8 +63,10 @@ body{
   color: white;
 }
 
+<<<<<<< Updated upstream
 .lh-4 {
   line-height:4  !important;
+<<<<<<< Updated upstream
 }
 
 /* 圖片傾斜 */
@@ -101,4 +103,14 @@ body{
 
 .c-title h1{
   font-size:1.2rem;;
+=======
+=======
+.page-header{
+  position: relative;
+  z-index: 0;
+  max-height: 1280px;
+  min-height: 100vh;
+  padding: 100px 0;
+>>>>>>> Stashed changes
+>>>>>>> Stashed changes
 }
