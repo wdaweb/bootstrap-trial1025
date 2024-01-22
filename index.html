@@ -6,6 +6,8 @@
   <link rel="stylesheet" href="./css/bootstrap.css">
   <link rel="stylesheet" href="./css/style.css">
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100;200;300;400;500;600;700;800;900&family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  
   <title>Flex-IT</title>
   <style>
     * {
@@ -30,12 +32,41 @@
       padding-top: 1rem;
       padding-bottom: 1rem;
     }
+
+    .swiper {
+      height: 180px;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 30px;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 30px;
+      
+    }
+    .gsap-marker-end,
+    .gsap-marker-start,
+    .gsap-marker-scroller-end,
+    .gsap-marker-scroller-start{
+      z-index:9999 !important;
+    }
   </style>
 </head>
 <body> 
   <!-- header ----------------------------------------------------------------------------->
   <!-- section01 ----------------------------------------------------------------------------->
-  <div id="section01" style="background-image: url(./img/pattern-bg-1.jpg);">
+  <div id="section01" style="background:linear-gradient(90deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img/pattern-bg-1.jpg);">
     <div id="particles-js" ></div>
       <div class="container">
         <nav class="navbar container-fluid navbar-expand-lg navbar-dark fs-14px" ">
@@ -127,7 +158,7 @@
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed architecto dolorum inventore totam adipisci</p>
             </div>
             <form class="d-flex">
-              <button class="btn btn-outline-light btn-media-lr" type="submit">START NOW</button>
+              <button class="btn btn-outline-info btn-media-lr" type="submit">START NOW</button>
               <button class="btn btn-outline-light btn-media bg-blue ms-4" type="submit"><i class="fa-solid fa-play"></i></button>
             </form>
           </div>
@@ -140,7 +171,7 @@
       </div>
   </div>
   <!-- section02 ----------------------------------------------------------------------------->
-  <div id="section02" class="bg-black p-5">
+  <div id="section02" class="p-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
@@ -151,7 +182,7 @@
           </div>
         </div>
         <div class="col-lg-4 d-flex justify-content-end align-items-center">
-          <button class="btn btn-outline-light btn-media-lr" type="submit">See All Services<i class="fa-solid fa-arrow-right ms-2"></i></button>
+          <button class="btn btn-info btn-media-lr" type="submit">See All Services<i class="fa-solid fa-arrow-right ms-2"></i></button>
         </div>  
       </div>
 
@@ -159,7 +190,7 @@
       <div class="row row-cols-1 row-cols-md-3 g-4 color-w">
         <div class="col">
           <div class="card p-1">
-            <div class=""><i class="fa-solid fa-laptop-code i-size color-blue"></i></div>
+            <div class=""><i class="fa-solid fa-laptop-code i-size color-blue aa"></i></div>
             <div class="card-body">
               <h5 class="c-title">Web Development</h5>
               <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque repellendus minima reiciendis nobis dolore obcaecati.</p>
@@ -221,7 +252,7 @@
     </div>
   </div>
   <!-- section03 -->
-  <div id="section03" class="bg-black p-5">
+  <div id="section03" class="p-5">
     <div class="container">
       <div class="row d-flex align-items-center">
         <div class="col-lg-6 col-sm-12">
@@ -286,7 +317,7 @@
 
           </div>
           <form class="d-flex">
-            <button class="btn btn-outline-light btn-media-lr" type="submit">START NOW</button>
+            <button class="btn btn-info btn-media-lr" type="submit">START NOW</button>
           </form>
         </div>
         <div class="col-lg-6 col-sm-12">
@@ -298,7 +329,7 @@
     </div>
   </div>
   <!-- section04 -->
-  <div id="section04" class="bg-black p-5">
+  <div id="section04" class="p-5">
     <div class="container">
       <div class="row d-flex align-items-center">
         <div class="col-lg-6 col-sm-12">
@@ -354,14 +385,15 @@
             </div>
           </div>
           <form class="d-flex">
-            <button class="btn btn-outline-light btn-media-lr" type="submit">Get In Touch</button>
+            <button class="btn btn-info btn-media-lr" type="submit">Get In Touch</button>
           </form>
         </div>
       </div>
     </div>
   </div>
   <!-- section05 -->
-  <div id="section05" style="background-image: url(./img/pattern-bg-3.jpg);" class="p-5">
+  
+  <div id="section05" style="background:linear-gradient(90deg,rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(./img/pattern-bg-3.jpg);" class="p-5">
     <div class="container">
     <!-- card -->
     <div class="row row-cols-1 row-cols-md-4 g-4 color-w text-center">
@@ -369,7 +401,7 @@
         <div class="p-1 card-top">
           <div class=""><i class="fa-regular fa-paper-plane i-size color-blue"></i></div>
           <div class="card-body">
-            <h5 class="c-title">750+</h5>
+            <h5 id="aa" class="c-title">750+</h5>
             <p class="card-text">Finished Projects</p>
           </div>
         </div>
@@ -378,7 +410,7 @@
         <div class="card-top p-1">
           <div class=""><i class="fa-brands fa-codepen i-size color-blue"></i></div>
           <div class="card-body">
-            <h5 class="c-title">23+</h5>
+            <h5 id="bb" class="c-title">23+</h5>
             <p class="card-text">Created Jobs</p>
           </div>
         </div>
@@ -387,7 +419,7 @@
         <div class="card-top p-1">
           <div class=""><i class="fa-regular fa-user i-size color-blue"></i></div>
           <div class="card-body">
-            <h5 class="c-title">200+</h5>
+            <h5 id="cc" class="c-title">200+</h5>
             <p class="card-text">Happy Customers</p>
           </div>
         </div>
@@ -396,7 +428,7 @@
         <div class="card-top p-1">
           <div class=""><i class="fa-regular fa-handshake i-size color-blue"></i></div>
           <div class="card-body">
-            <h5 class="c-title">28+</h5>
+            <h5 id="dd" class="c-title">28+</h5>
             <p class="card-text">Years Of Exprience</p>
           </div>
         </div>
@@ -407,8 +439,40 @@
   </div>
   <!-- section06 -->
   <!-- section07 -->
+  <!-- Swiper -->
+  <div id="section07" class="bg-blue">
+    <div class="container p-5">
+      <h1 class="color-w text-center mb-3">Trusted By Over 500 Clients Around The World</h1>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img  src="./img/loccal/1-white.png">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/loccal/2-white.png">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/loccal/3-white.png">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/loccal/4-white.png">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/loccal/5-white.png">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/loccal/6-white.png">
+          </div>
+          <div class="swiper-slide">
+            <img src="./img/loccal/7-white.png">
+          </div>s
+        </div>
+        <!-- <div class="swiper-pagination"></div> -->
+      </div>
+    </div>
+  </div>
   <!-- section08 -->
-  <div id="section08" class=" p-5" style="background-color: rgb(0, 0, 25);">
+  <div id="section08" class=" p-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
@@ -419,7 +483,7 @@
           </div>
         </div>
         <div class="col-lg-4 d-flex justify-content-end align-items-center">
-          <button class="btn btn-outline-light btn-media-lr" type="submit">See All Services<i class="fa-solid fa-arrow-right ms-2"></i></button>
+          <button class="btn btn-info btn-media-lr" type="submit">See All Services<i class="fa-solid fa-arrow-right ms-2"></i></button>
         </div>  
       </div>
 
@@ -502,7 +566,7 @@
   </div>
   <!-- section09 -->
   <!-- section10 -->
-  <div id="section10" class="bg-black p-5">
+  <div id="section10" class="p-5">
     <div class="container">
       <div class="row">
         <div class="col-lg-8">
@@ -512,14 +576,14 @@
           </div>
         </div>
         <div class="col-lg-4 d-flex justify-content-end align-items-center">
-          <button class="btn btn-outline-light btn-media-lr" type="submit">See All Services<i class="fa-solid fa-arrow-right ms-2"></i></button>
+          <button class="btn btn-info btn-media-lr" type="submit">See All Services<i class="fa-solid fa-arrow-right ms-2"></i></button>
         </div>  
       </div>
 
       <!-- card -->
       <div class="row row-cols-1 row-cols-md-3 g-4 color-w">
         <div class="col">
-          <div class="card p-1">
+          <div class="p-1" style="background-color: #062241;">
             <div style="position: relative;">
               <img class="card-img-top" src="./img/news/1.jpg" >
               <div class="blog-btn">05 oct 2022</div>
@@ -532,7 +596,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card p-1">
+          <div class="p-1" style="background-color: #062241;">
             <div style="position: relative;">
               <img class="card-img-top" src="./img/news/2.jpg" >
               <div class="blog-btn">15 sep 2022</div>
@@ -545,7 +609,7 @@
           </div>
         </div>
         <div class="col">
-          <div class="card p-1">
+          <div class="p-1" style="background-color: #062241;">
             <div style="position: relative;">
               <img class="card-img-top" src="./img/news/3.jpg" >
               <div class="blog-btn">27 aug 2022</div>
@@ -562,11 +626,74 @@
   </div>
 
   <!-- footer -->
+  <div id="footer" style="background:linear-gradient(90deg,rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(./img/footer-bg-1.jpg);" class="p-5">
+    <div class="container">
+      <div class="row color-w">
+        <div class="col-xl-4 col-sm-12">
+          <img src="./img/logo-light.png">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatibus facere modi possimus dignissimos, aliquam nobis eaque? Voluptatem magnam quisquam rem.</p>
+          <div class="mb-3">
+            <labe class="form-label">Subscribe To Our News Letter</label>
+            <div class="row">
+              <div class="col-8">
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Email Address">
+              </div>
+              <div class="col-4 p-0">
+                <button type="submit" class="btn btn-primary">submit</button>
+              </div>
+            </div>
+            <p>*We Will Not Share Your Personal Info</p>
+          </div>
+        </div>
+        <div class="col-xl-2 col-sm-6">
+          <h4>Useful Links</h4>
+          <a href="#" class="lh-2 f-text"><i class="fa-solid fa-arrow-right ms-2"></i> Google</a> <br>
+          <a href="#" class="lh-2 f-text"><i class="fa-solid fa-arrow-right ms-2"></i> Dribbble</a> <br>
+          <a href="#" class="lh-2 f-text"><i class="fa-solid fa-arrow-right ms-2"></i> LinkedIn</a> <br>
+          <a href="#" class="lh-2 f-text"><i class="fa-solid fa-arrow-right ms-2"></i> Wikipedia</a>
+        </div>
+        <div class="col-xl-2 col-sm-6">
+          <h4>Useful Links</h4>
+          <a href="#" class="lh-2 f-text"><i class="fa-solid fa-arrow-right ms-2"></i> Support</a> <br>
+          <a href="#" class="lh-2 f-text"><i class="fa-solid fa-arrow-right ms-2"></i> Dashboard</a> <br>
+          <a href="#" class="lh-2 f-text"><i class="fa-solid fa-arrow-right ms-2"></i> Drivers</a> <br>
+          <a href="#" class="lh-2 f-text"><i class="fa-solid fa-arrow-right ms-2"></i> Projects</a>
+        </div>
+        <div class="col-xl-4 c0l-sm-12">
+          <h4>Useful Links</h4>
+          <a href="#" class="lh-2 f-text"><i class="fa-solid fa-arrow-right ms-2"></i> example@support.com</a> <br>
+          <a href="#" class="lh-2 f-text"><i class="fa-solid fa-arrow-right ms-2"></i> 5 xyz st., abc, alexandria, egypt.</a> <br>
+          <a href="#" class="lh-2 f-text"><i class="fa-solid fa-arrow-right ms-2"></i> +20123456789</a>
+          <div class="media-icon">
+            <div class="row">
+              <div class="f-box d-flex justify-content-center align-items-center ms-3">
+                <i class="fa-brands fa-facebook-f"></i>
+              </div>
+              <div class="f-box d-flex justify-content-center align-items-center ms-3">
+                <i class="fa-brands fa-youtube"></i>
+              </div>
+              <div class="f-box d-flex justify-content-center align-items-center ms-3">
+                <i class="fa-brands fa-instagram"></i>
+              </div>
+              <div class="f-box d-flex justify-content-center align-items-center ms-3">
+                <i class="fa-brands fa-twitter"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.js'></script>
   <script src="./js/bootstrap.bundle.js"></script>
   <script src="https://kit.fontawesome.com/a8dd4fdfaa.js" crossorigin="anonymous"></script>
   <script src="./js/particles.min.js"></script>
   <script src="./js/app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <!-- gsap -->
+  <script src="./gsap/gsap.js"></script>
+  <script src="./gsap/ScrollTrigger.js"></script>
 
   <script>
   document.querySelectorAll('.skewable-container').forEach(function(container) {
@@ -581,6 +708,58 @@
       container.querySelector('.skewable-image').style.transform =  'rotateX(' + rotateX + 'deg) rotateY(' + rotateY + 'deg)';
     })
   })
+
+  </script>
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        768: {
+          slidesPerView: 4,
+          spaceBetween: 40,
+        },
+        1024: {
+          slidesPerView: 5,
+          spaceBetween: 50,
+        },
+      },
+    });
+  </script>
+  <script>
+    gsap.registerPlugin(ScrollTrigger);
+
+    const numbers = {
+      num1: 750,
+      num2: 23,
+      num3: 200,
+      num4: 28,
+    }
+
+    gsap.to('a',{
+      scrollTrigger:{
+        trigger:'#section05',
+        start:'top center',
+        end:'bottom center',
+        markers:false,
+      },
+      onUpdate() {
+        $('#aa').text((numbers.num1*this.totalProgress()).toFixed(0))
+        $('#bb').text((numbers.num2*this.totalProgress()).toFixed(0))
+        $('#cc').text((numbers.num3*this.totalProgress()).toFixed(0))
+        $('#dd').text((numbers.num4*this.totalProgress()).toFixed(0))
+
+      },
+      duration:1
+    }) 
 
   </script>
 </body>

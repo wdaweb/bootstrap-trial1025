@@ -3054,14 +3054,14 @@ textarea.form-control-lg {
 }
 
 .btn-info {
-  color: #000;
-  background-color: #0dcaf0;
-  border-color: #0dcaf0;
+  color: #ffffff;
+  background-color: #09AFF4;
+  border-color: #09AFF4;
 }
 .btn-info:hover {
-  color: #000;
-  background-color: #31d2f2;
-  border-color: #25cff2;
+  color: #ffffff;
+  background-color: #00010100;
+  border-color:3px solid #09AFF4;
 }
 .btn-check:focus + .btn-info, .btn-info:focus {
   color: #000;
