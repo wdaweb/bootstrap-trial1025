@@ -16,9 +16,9 @@
   color: white;
 }
 /* style=background:#09AFF4;" */
-body{
+/* body{
   background: rgb(66, 94, 135);
-}
+} */
 
 .bg-blue{
   background: #09AFF4;
@@ -50,7 +50,7 @@ body{
 
 .h-text h1{
   color: white;
-  font-weight:900;
+  font-weight:600;
   letter-spacing:1px;
   font-size:50px;
 }
@@ -63,9 +63,9 @@ body{
   color: white;
 }
 
-/* .lh-4 {
-  line-height:4  !important;
-} */
+.lh-2 {
+  line-height:3  !important;
+}
 
 /* 圖片傾斜 */
 .skewable-container {
@@ -122,4 +122,61 @@ body{
 }
 #section03 p{
   font-size: 12px;
+  color: gray;
+}
+
+#section04 p{
+  font-size: 12px;
+  color: gray;
+}
+
+#section04 h2{
+  font-size: 40px;
+  font-weight:900;
+  letter-spacing: 3px;
+  color: #09AFF4;
+}
+
+#section05 h5{
+  font-size: 3rem;
+  font-weight:900;
+  letter-spacing: 3px;
+  /* color: #09AFF4; */
+}
+
+#section05 .card-top{
+  border: 1px solid #09AFF4;
+  border-top: 5px solid #09AFF4;
+}
+
+.box-1{
+ border:1px solid #09AFF4;
+ border-radius: 10px;
+}
+
+.line{
+  width: 60%;
+  height: 3px;
+  background: #09AFF4;
+  margin: auto;
+}
+
+.color-gray{
+  color: gray;
+}
+
+.fs-7{
+  font-size: 10px;
+}
+
+/* 10---------------------- */
+.blog-btn{
+  position: absolute;
+  width: 120px;
+  height: 30px;
+  text-align: center;
+  margin-left: 5px;
+  background-color: rgba(0, 0, 0, 0.578);
+  border-radius: 20px;
+  top:10px;
 }
